@@ -14,9 +14,9 @@ class Calculator
 
   def self.valid_multiple_input?(array_of_arrays)
     array_of_arrays.is_a?(Array) &&
-    array_of_arrays&.reject do |el|
-      el.is_a? Array
-    end&.empty?
+      array_of_arrays&.reject do |el|
+        el.is_a? Array
+      end&.empty?
   end
 
   K = 1.5

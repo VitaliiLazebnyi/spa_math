@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module Api
   module V1
     class CalculateController < ApplicationController
@@ -13,7 +14,7 @@ module Api
       private
 
       def calc_params
-        params.require(:data)["input_arrays"]
+        params.require(:data)['input_arrays']
       end
     end
   end
